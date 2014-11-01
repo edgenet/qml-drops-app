@@ -10,6 +10,7 @@ RESOURCES += qml.qrc
 uri_drops = org.edgenet.qml.drops
 
 ANDROID_EXTRA_LIBS = \
+  $$[QT_INSTALL_QML]/$$replace(uri_drops,  \\., /)/libsodium.so \
   $$[QT_INSTALL_QML]/$$replace(uri_drops,  \\., /)/libzmq.so \
   $$[QT_INSTALL_QML]/$$replace(uri_drops,  \\., /)/libczmq.so \
   $$[QT_INSTALL_QML]/$$replace(uri_drops,  \\., /)/libzyre.so \
