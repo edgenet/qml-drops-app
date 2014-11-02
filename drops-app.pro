@@ -7,7 +7,7 @@ SOURCES += main.cpp
 RESOURCES += qml.qrc
 
 # URIs of plugins with shared libraries to bundle on android
-uri_drops = org.edgenet.qml.drops
+uri_drops = org.edgenet.drops
 
 ANDROID_EXTRA_LIBS = \
   $$[QT_INSTALL_QML]/$$replace(uri_drops,  \\., /)/libsodium.so \
