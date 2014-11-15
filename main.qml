@@ -3,7 +3,7 @@ import QtQuick 2.3
 import QtQuick.Controls 1.2
 import QtQuick.Layouts 1.1
 
-import org.edgenet.drops 1.0
+import QmlDrops 1.0
 
 
 ApplicationWindow {
@@ -65,7 +65,7 @@ ApplicationWindow {
       Button {
         id: selfTestButton
         text: "System Self-Test\n(prints to debugging console)"
-        onClicked: Drops.selfTest(true)
+        onClicked: QmlDrops.test(true)
         
         Layout.columnSpan: 2
         Layout.fillWidth: true
